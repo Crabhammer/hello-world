@@ -88,6 +88,7 @@ def printAll():
     print("Craft in order:")
     for i in medCrafts:
         print(f"{crafts[i]} {i}")
+    print("")
     for i in topCrafts:
         print(f"{crafts[i]} {i}")
  
