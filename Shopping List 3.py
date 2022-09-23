@@ -4,6 +4,44 @@
 from unittest import skip
 from colorama import Fore,Back,Style
 
+class Material:
+
+    def __init__(self, name, needed, inv, bank, type, HQ):
+        self.name = name
+        self.needed = needed
+        self.inv = inv
+        self.bank = bank
+        self.type = type
+        self.HQ = HQ
+        self.forCraft = ""
+
+    def update(self, name, needed, inv, bank, type, HQ, forCraft):
+        self.name = name
+        self.needed = needed
+        self.inv = inv
+        self.bank = bank
+        self.type = type
+        self.HQ = HQ
+        self.forCraft = forCraft
+
+    def updateName(self, name):
+        self.name = name
+
+    def updateNeeded(self, needed):
+        self.needed = needed 
+    
+    def output(self):
+        return self.name, self.needed, self.inv, self.bank, self.type, self.HQ, self.forCraft
+
+class Craft:
+
+    def __init__(self, job, quantity, materials):
+        self.job = job
+        self.quantity = quantity
+        self.materials = materials
+        
+    
+
 def initializeStructures():
     craftDict = {} # 3.0 dict
     materialDict = {} # 3.0 dict
@@ -60,6 +98,7 @@ def addTopCraft():
         else:
             parseCraft(s)
             addBankMats()
+    materialSort()
     printAll()
     askToSave()
 
@@ -84,7 +123,10 @@ def addBankMats():
         if s.lower() == "done":
             break
         else:
-            parseItem(s, 6, 4)
+            inputName, inputQuantity, inputInventory, inputBank, inputType, inputHQ = parseItem(s)
+            materialDict[inputName] = Material(inputName, inputQuantity, inputInventory, inputBank, inputType, inputHQ)
+            print(materialDict[inputName].needed)
+
                 
             # old way
             """
@@ -101,34 +143,50 @@ def addBankMats():
     # outside the while loop
     addMedCrafts()
 
-def parseItem(s, argMax, argMin):
+def parseItem(s):
     l = s.split(".")
-    if len(l) > argMax :
+    if len(l) > 6 :
         print("invalid input")
-    elif len(l) < argMin :
+    elif len(l) < 4 :
         print("invalid input")
     else:
         # argument has 4, 5, or 6 arguments
+        inputName = l[0]
+        inputQuantity = l[1]
+        inputInventory = l[2]
+        inputBank = l[3]
+        inputType = l[4] if len(l) > 4 else None
+        inputHQ = l[5] if len(l) > 5 else None
+        return inputName, inputQuantity, inputInventory, inputBank, inputType, inputHQ
+
+        # old assignment to dictionary
+        """
         materialName = l[0]
         if materialName in materialDict:
             materialQuantity = int(l[1]) + int(materialDict[materialName][0])
+            materialInDict = True
         else:
             materialQuantity = int(l[1])
-        if l[2] != " ":
+        if materialInDict != False:
             materialInInventory = int(l[2])
-        if l[3] != " ":
             materialInBank = int(l[3])
         if len(l) > 4:
             materialType = l[4].lower()
             if len(l) > 5:
-                materialHQ = l[5].lower()
+                materialHQ = l[5].upper()
             else:
-                materialHQ = ""
+                materialHQ = materialDict[materialName][5]
         else:
             materialType = ""
             materialHQ = ""
         materialDict[materialName] = (materialQuantity, materialInInventory, materialInBank, materialType, materialHQ)
-    
+        """
+
+def addToDict(s, dict):
+    if s in dict:
+        skip
+
+
 def addMedCrafts():
     print("Add intermediary crafts or 'done'")
     print("Add right to left, top to bottom")
@@ -151,21 +209,24 @@ def addMedCrafts():
     print("Add top-level crafts or 'done'")
     print("Format:")
     
+def materialSort():
+    skip
+
 def printAll():
     print("")
     print("")
     print("Remove from bank:")
     for key,value in materialDict.items():
         materialName = key
-        materialQuantity = int(value[0])
-        materialInInventory = int(value[1])
-        materialInBank = int(value[2])
-        materialType = value[3]
-        materialHQ = value[4]
+        materialQuantity = value.needed
+        materialInInventory = value.inv
+        materialInBank = value.bank
+        materialType = value.type
+        materialHQ = value.HQ
         color = Fore.RESET
         if materialQuantity > materialInInventory + materialInBank:
             color = Fore.RED
-        print(f"({color}{materialType}) {materialQuantity} {materialName}: inv: {materialInInventory} bank: {materialInBank} {materialHQ}")
+        print(f"{color}({materialType}) {materialQuantity} {materialName}: inv: {materialInInventory} bank: {materialInBank} {materialHQ}{Style.RESET_ALL}")
     """
     for i in oldneeded.keys():
         color=Fore.RESET
