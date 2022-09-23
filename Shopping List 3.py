@@ -9,11 +9,65 @@ def initializeStructures():
     materialDict = {} # 3.0 dict
     return craftDict, materialDict
 
-def parseCraft(s, argMin, argMax):
+# loads 2.0 format
+def askToLoad():
+    s=input("Load previous list?\n> ")
+    if s.lower() == "y":
+        with open("shoppinglist.txt","r") as file:
+            lines = file.readlines()
+            isBank = True
+            isTopCraft = False
+            for line in lines:
+                if line == "bank\n":
+                    continue
+                elif line == "oldmedCrafts\n":
+                    isBank = False
+                elif line == "oldtopCrafts\n":
+                    isTopCraft = True
+                else:
+                    line = line[:len(line)-1]
+                    l = line.split(".")
+                    item = l[1]
+                    quant = int(l[0])
+                    if isBank:
+                        numInInv = int(l[2])
+                        numInBank = int(l[3])
+                        oldneeded[item] = quant
+                        oldinv[item] = numInInv
+                        oldbank[item] = numInBank
+                    elif isTopCraft:
+                        oldtopCrafts.append(item)
+                        oldcrafts[item] = quant
+                    else:
+                        oldmedCrafts.append(item)
+                        oldcrafts[item] = quant
+        printAll()
+        s = input("Add to this list?\n> ")
+        if s.lower() == "y":
+            addTopCraft()
+    else:
+        craftDict.clear()
+        materialDict.clear()
+        addTopCraft()
+
+def addTopCraft():
+    print("Add top-level craft or 'done'")
+    print("Format:")
+    while True:
+        s = input("Name.Crafter(.Quantity)\n> ")
+        if s.lower() == "done":
+            break
+        else:
+            parseCraft(s)
+            addBankMats()
+    printAll()
+    askToSave()
+
+def parseCraft(s):
     l = s.split(".")
-    if len(l) > argMax:
+    if len(l) > 3:
         print("invalid input")
-    elif len(l) < argMin:
+    elif len(l) < 2:
         print("invalid input")
     else:
         craftName = l[0]
@@ -23,10 +77,10 @@ def parseCraft(s, argMin, argMax):
         craftDict[craftName] = (craftCrafter,craftQuantity,craftLevel)
     
 def addBankMats():
-    print("Add mats from bank or 'done'")
+    print("Add crafting materials or 'done'")
     print("Format: (optional)")
     while True:
-        s = input("Name.Quantity.Inv.Bank(.Type(.HQ))\n")
+        s = input("Name.Quantity.Inv.Bank(.Type(.HQ))\n> ")
         if s.lower() == "done":
             break
         else:
@@ -54,7 +108,7 @@ def parseItem(s, argMax, argMin):
     elif len(l) < argMin :
         print("invalid input")
     else:
-                # argument has 4, 5, or 6 arguments
+        # argument has 4, 5, or 6 arguments
         materialName = l[0]
         if materialName in materialDict:
             materialQuantity = int(l[1]) + int(materialDict[materialName][0])
@@ -108,7 +162,10 @@ def printAll():
         materialInBank = int(value[2])
         materialType = value[3]
         materialHQ = value[4]
-        print(f"({materialType}) {materialQuantity} {materialName}: inv: {materialInInventory} bank: {materialInBank} {materialHQ}")
+        color = Fore.RESET
+        if materialQuantity > materialInInventory + materialInBank:
+            color = Fore.RED
+        print(f"({color}{materialType}) {materialQuantity} {materialName}: inv: {materialInInventory} bank: {materialInBank} {materialHQ}")
     """
     for i in oldneeded.keys():
         color=Fore.RESET
@@ -133,8 +190,6 @@ def printAll():
         craftLevel = value[2]
         if craftLevel == "top":
             print(f"{craftCrafter}: {craftQuantity} {craftName}")
-
-
     """
     for i in range(len(craftList)):
         craftName = craftList[i][0]
@@ -159,59 +214,9 @@ def askToSave():
             file.write("oldtopCrafts\n")
             for i in oldtopCrafts:
                 file.write("{}.{}\n".format(oldcrafts[i],i))
-
-def askToLoad():
-    s=input("Load previous list?\n")
-    if s.lower() == "y":
-        with open("shoppinglist.txt","r") as file:
-            lines = file.readlines()
-            isBank = True
-            isTopCraft = False
-            for line in lines:
-                if line == "bank\n":
-                    continue
-                elif line == "oldmedCrafts\n":
-                    isBank = False
-                elif line == "oldtopCrafts\n":
-                    isTopCraft = True
-                else:
-                    line = line[:len(line)-1]
-                    l = line.split(".")
-                    item = l[1]
-                    quant = int(l[0])
-                    if isBank:
-                        numInInv = int(l[2])
-                        numInBank = int(l[3])
-                        oldneeded[item] = quant
-                        oldinv[item] = numInInv
-                        oldbank[item] = numInBank
-                    elif isTopCraft:
-                        oldtopCrafts.append(item)
-                        oldcrafts[item] = quant
-                    else:
-                        oldmedCrafts.append(item)
-                        oldcrafts[item] = quant
-        printAll()
-        s = input("Add to this list?\n")
-        if s.lower() == "y":
-            addTopCraft()
-    else:
-        addTopCraft()
         
-# old methods
-def addTopCraft():
-    print("Add top-level craft or 'done'")
-    print("Format:")
-    while True:
-        s = input("Name.Crafter(.Quantity)\n> ")
-        if s.lower() == "done":
-            break
-        else:
-            parseCraft(s, 2, 3)
-            addBankMats()
-    printAll()
-    askToSave()
 
+# old methods
 def initializeOldVariables():
     oldtopCrafts = [] # 2.0 list
     oldmedCrafts = [] # 2.0 list
