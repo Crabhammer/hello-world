@@ -222,7 +222,10 @@ def printAll():
         materialInInventory = value.inv
         materialInBank = value.bank
         materialType = value.type
-        materialHQ = value.HQ
+        if value.HQ == None:
+            materialHQ = ""
+        else:
+            materialHQ = value.HQ
         color = Fore.RESET
         if materialQuantity > materialInInventory + materialInBank:
             color = Fore.RED
