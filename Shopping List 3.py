@@ -125,7 +125,6 @@ def addBankMats():
         else:
             inputName, inputQuantity, inputInventory, inputBank, inputType, inputHQ = parseItem(s)
             materialDict[inputName] = Material(inputName, inputQuantity, inputInventory, inputBank, inputType, inputHQ)
-            print(materialDict[inputName].needed)
 
                 
             # old way
@@ -152,9 +151,9 @@ def parseItem(s):
     else:
         # argument has 4, 5, or 6 arguments
         inputName = l[0]
-        inputQuantity = l[1]
-        inputInventory = l[2]
-        inputBank = l[3]
+        inputQuantity = int(l[1])
+        inputInventory = int(l[2])
+        inputBank = int(l[3])
         inputType = l[4] if len(l) > 4 else None
         inputHQ = l[5] if len(l) > 5 else None
         return inputName, inputQuantity, inputInventory, inputBank, inputType, inputHQ
@@ -218,18 +217,18 @@ def printAll():
     print("Remove from bank:")
     for key,value in materialDict.items():
         materialName = key
-        materialQuantity = value.needed
-        materialInInventory = value.inv
-        materialInBank = value.bank
+        materialNeeded = int(value.needed)
+        materialInInventory = int(value.inv)
+        materialInBank = int(value.bank)
         materialType = value.type
         if value.HQ == None:
             materialHQ = ""
         else:
             materialHQ = value.HQ
         color = Fore.RESET
-        if materialQuantity > materialInInventory + materialInBank:
+        if materialNeeded > materialInInventory + materialInBank:
             color = Fore.RED
-        print(f"{color}({materialType}) {materialQuantity} {materialName}: inv: {materialInInventory} bank: {materialInBank} {materialHQ}{Style.RESET_ALL}")
+        print(f"{color}({materialType}) {materialNeeded} {materialName}: inv: {materialInInventory} bank: {materialInBank} {materialHQ}{Style.RESET_ALL}")
     """
     for i in oldneeded.keys():
         color=Fore.RESET
