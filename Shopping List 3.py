@@ -96,13 +96,13 @@ def addTopCraft():
         if s.lower() == "done":
             break
         else:
-            parseCraft(s)
+            parseTopCraft(s)
             addBankMats()
     materialSort()
     printAll()
     askToSave()
 
-def parseCraft(s):
+def parseTopCraft(s):
     l = s.split(".")
     if len(l) > 3:
         print("invalid input")
@@ -187,7 +187,7 @@ def parseItem(s):
 
 def addMedCrafts():
     print("Add intermediary crafts or 'done'")
-    print("Add right to left, top to bottom")
+    print("Add top to bottom, right to left")
     print("Format:")
     while True:
         s = input("Quantity.Name\n")
