@@ -123,8 +123,8 @@ def addBankMats():
         if s.lower() == "done":
             break
         else:
-            inputName, inputQuantity, inputInventory, inputBank, inputType, inputHQ = parseItem(s)
-            materialDict[inputName] = Material(inputName, inputQuantity, inputInventory, inputBank, inputType, inputHQ)
+            inputName, inputNeeded, inputInventory, inputBank, inputType, inputHQ = parseItem(s)
+            materialDict[inputName] = Material(inputName, inputNeeded, inputInventory, inputBank, inputType, inputHQ)
 
                 
             # old way
@@ -151,12 +151,16 @@ def parseItem(s):
     else:
         # argument has 4, 5, or 6 arguments
         inputName = l[0]
-        inputQuantity = int(l[1])
+        inputNeeded = int(l[1])
         inputInventory = int(l[2])
         inputBank = int(l[3])
         inputType = l[4] if len(l) > 4 else None
         inputHQ = l[5] if len(l) > 5 else None
-        return inputName, inputQuantity, inputInventory, inputBank, inputType, inputHQ
+
+        if inputName in materialDict:
+            inputNeeded = inputNeeded + materialDict[inputName].needed
+
+        return inputName, inputNeeded, inputInventory, inputBank, inputType, inputHQ
 
         # old assignment to dictionary
         """
@@ -180,11 +184,6 @@ def parseItem(s):
             materialHQ = ""
         materialDict[materialName] = (materialQuantity, materialInInventory, materialInBank, materialType, materialHQ)
         """
-
-def addToDict(s, dict):
-    if s in dict:
-        skip
-
 
 def addMedCrafts():
     print("Add intermediary crafts or 'done'")
