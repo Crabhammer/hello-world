@@ -54,31 +54,26 @@ def askToLoad():
         with open("shoppinglist.txt","r") as file:
             lines = file.readlines()
             isBank = True
-            isTopCraft = False
+            isCraft = False
             for line in lines:
                 if line == "bank\n":
                     continue
-                elif line == "oldmedCrafts\n":
+                elif line == "medCrafts\n":
                     isBank = False
-                elif line == "oldtopCrafts\n":
-                    isTopCraft = True
                 else:
                     line = line[:len(line)-1]
                     l = line.split(".")
-                    item = l[1]
-                    quant = int(l[0])
+                    name = str(l[1])
+                    needed = int(l[0])
                     if isBank:
-                        numInInv = int(l[2])
-                        numInBank = int(l[3])
-                        oldneeded[item] = quant
-                        oldinv[item] = numInInv
-                        oldbank[item] = numInBank
-                    elif isTopCraft:
-                        oldtopCrafts.append(item)
-                        oldcrafts[item] = quant
-                    else:
-                        oldmedCrafts.append(item)
-                        oldcrafts[item] = quant
+                        inv = int(l[2])
+                        bank = int(l[3])
+                        type = str(l[4])
+                        materialDict[name] = Material(needed,name,inv,bank,type,"")
+                    elif isCraft:
+                        job = str(l[2])
+                        craftDict[name] = Craft(name,job,needed,None,0)
+
         printAll()
         s = input("Add to this list?\n> ")
         if s.lower() == "y":
@@ -291,7 +286,7 @@ def askToSave():
             for i in range(1,-1,-1):
                 for key,value in craftDict.items():
                     if value.level == i:
-                        file.write("{}.{}.{}\n".format(value.needed, key, value.job, value.level))
+                        file.write("{}.{}.{}.{}\n".format(value.needed, key, value.job, value.level))
         
 
 # old methods
