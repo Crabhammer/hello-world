@@ -8,10 +8,10 @@ bank
 14.Fire Crystal.109.0.None
 6.Raw Agate.0.1.Stone
 medCrafts
-1.Mythrite Nugget.BSM|ARM|GSM
-6.Basilisk Whetstone.GSM
-2.Tiger's Eye.GSM
-2.Jadeite.GSM
-2.Agate.GSM
-1.Mythrite Bangle of Aiming.GSM
-2.Agate Ring of Aiming.GSM
+1.Mythrite Nugget.BSM|ARM|GSM.1
+6.Basilisk Whetstone.GSM.1
+2.Tiger's Eye.GSM.1
+2.Jadeite.GSM.1
+2.Agate.GSM.1
+1.Mythrite Bangle of Aiming.GSM.0
+2.Agate Ring of Aiming.GSM.0
