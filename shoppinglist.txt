@@ -1,0 +1,5 @@
+bank
+1.Ore.1.1.Stone
+medCrafts
+1.Nugget.BSM
+1.Knives.ALC

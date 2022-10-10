@@ -50,7 +50,7 @@ def initializeStructures():
 # loads 2.0 format
 def askToLoad():
     s=input("Load previous list?\n> ")
-    if s.lower() == "y":
+    if False: # s.lower() == "y":
         with open("shoppinglist.txt","r") as file:
             lines = file.readlines()
             isBank = True
