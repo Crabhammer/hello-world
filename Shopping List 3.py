@@ -35,12 +35,14 @@ class Material:
 
 class Craft:
 
-    def __init__(self, name, job, needed, materials, level):
+    def __init__(self, name, job, needed, materials, level, inv=0, invHQ=0):
         self.name = str(name)
         self.job = str(job)
         self.needed = int(needed)
         self.materials = materials
         self.level = int(level)
+        self.inv = int(inv)
+        self.invHQ = int(invHQ)
         
 def initializeStructures():
     craftDict = {} # 3.0 dict
@@ -58,7 +60,7 @@ def askToLoad():
             for line in lines:
                 if line == "bank\n":
                     continue
-                elif line == "medCrafts\n":
+                elif line == "midCrafts\n":
                     isBank = False
                     isCraft = True
                 else:
@@ -73,7 +75,9 @@ def askToLoad():
                         materialDict[name] = Material(needed,name,inv,bank,type,"")
                     elif isCraft:
                         job = str(l[2])
-                        craftDict[name] = Craft(name,job,needed,None,0)
+                        inv = int(l[3])
+                        invHQ = int(l[4])
+                        craftDict[name] = Craft(name,job,needed,None,0,inv,invHQ)
 
         printAll()
         s = input("Add to this list?\n> ")
@@ -100,7 +104,7 @@ def addTopCraft():
 
 def parseCraft(s, level=0):
     l = s.split(".") # Name.Crafter(.Quantity) (top) ||  Quantity.Name.Crafter (med)
-    if len(l) > 3:
+    if len(l) > 5:
         print("invalid input")
     elif len(l) < 2:
         print("invalid input")
@@ -109,10 +113,19 @@ def parseCraft(s, level=0):
         craftName = str(l[1])
         craftJob = str(l[2]).upper()
         craftLevel = int(level)
+        if len(l) > 3:
+            craftLess = int(l[3])
+            if len(l) > 4:
+                craftLessHQ = int(l[4])
+            else:
+                craftLessHQ = 0
+        else:
+            craftLess = 0
+            craftLessHQ = 0
 
         if craftName in craftDict:
             craftNeeded = craftNeeded + int(craftDict[craftName].needed)
-        craftDict[craftName] = Craft(craftName,craftJob,craftNeeded,None,craftLevel)
+        craftDict[craftName] = Craft(craftName,craftJob,craftNeeded,None,craftLevel,craftLess,craftLessHQ)
     
 def addBankMats():
     print("Add crafting materials or 'done'")
@@ -141,7 +154,7 @@ def addBankMats():
                 print("invalid input")
             """
     # outside the while loop
-    addMedCrafts()
+    addMidCrafts()
 
 def parseItem(s):
     l = s.split(".")
@@ -186,7 +199,7 @@ def parseItem(s):
         materialDict[materialName] = (materialQuantity, materialInInventory, materialInBank, materialType, materialHQ)
         """
 
-def addMedCrafts():
+def addMidCrafts():
     print("Add intermediary crafts or 'done'")
     print("Add top to bottom, right to left")
     print("Format:")
@@ -273,8 +286,10 @@ def craftPrint(level):
         craftJob = str(value.job)
         craftNeeded = int(value.needed)
         craftLevel = int(value.level)
+        craftLess = int(value.inv)
+        craftLessHQ = int(value.invHQ)
         if craftLevel == level:
-            print(f"{craftJob}: {craftNeeded} {craftName}")
+            print(f"{craftJob}: {craftNeeded} {craftName} - (inv: {craftLess}, HQ: {craftLessHQ}")
  
 def askToSave():
     s=input("Save this list?\n")
@@ -282,12 +297,13 @@ def askToSave():
         with open("shoppinglist.txt","w") as file:
             file.write("bank\n")
             for key,value in materialDict.items():
-                file.write("{}.{}.{}.{}.{}\n".format(value.needed,key,value.inv,value.bank,value.type))
-            file.write("medCrafts\n")
+                file.write(f"{value.needed}.{key}.{value.inv}.{value.bank}.{value.type}\n")
+            file.write("midCrafts\n")
             for i in range(1,-1,-1):
                 for key,value in craftDict.items():
                     if value.level == i:
-                        file.write("{}.{}.{}.{}\n".format(value.needed, key, value.job, value.level))
+                        #file.write("{}.{}.{}.{}\n".format(value.needed, key, value.job, value.level))
+                        file.write(f"{value.needed}.{key}.{value.job}.{value.level}.{value.inv}.{value.invHQ}\n")
         
 
 # old methods

@@ -1,17 +1,7 @@
 bank
-5.Mythrite Sand.87.4.Stone
-1.Mythril Ore.0.98.Stone
-6.Raw Tiger's Eye.0.6.Stone
-8.Basilisk Egg.0.21.Stone
-2.Jade.0.9.Stone
-30.Wind Crystal.55.0.None
-14.Fire Crystal.109.0.None
-6.Raw Agate.0.1.Stone
-medCrafts
-1.Mythrite Nugget.BSM|ARM|GSM.1
-6.Basilisk Whetstone.GSM.1
-2.Tiger's Eye.GSM.1
-2.Jadeite.GSM.1
-2.Agate.GSM.1
-1.Mythrite Bangle of Aiming.GSM.0
-2.Agate Ring of Aiming.GSM.0
+8.Mythrite Ore.0.18.Stone
+2.Mythrite Nugget.0.2.Stone
+2.Yeti Fang.0.8.Bone
+midCrafts
+2.Mythrite Ingot.GSM.1.0.0
+2.Yeti Fang Ring of Aiming.GSM.0.0.0
