@@ -103,7 +103,9 @@ def addTopCraft():
     askToSave()
 
 def parseCraft(s, level=0):
-    l = s.split(".") # Name.Crafter(.Quantity) (top) ||  Quantity.Name.Crafter (med)
+    l = s.split(".") # Needed.Name.Crafter (top) ||  Quantity.Name.Crafter (med)
+    if type(l[0]) != type(0):
+        l.insert(0,1)
     if len(l) > 5:
         print("invalid input")
     elif len(l) < 2:
@@ -137,8 +139,14 @@ def addBankMats():
         else:
             needed, name, inv, bank, type, HQ = parseItem(s)
             #needed, name, inv, bank, type, HQ = parseItem(s)
-            if name in materialDict:
-                needed = int(needed) + int(materialDict[name].needed)
+            #if name in materialDict:
+            #    print(f"material {name} in materialDict")
+            #    print(f"materialNeeded= {needed}")
+            #    print(f"materialDict[{name}].needed= {materialDict[name].needed}")
+            #
+            #    needed = int(needed) + int(materialDict[name].needed)
+            #
+            #    print(f"needed= {needed}")
             materialDict[name] = Material(needed, name, inv, bank, type, HQ)
                 
             # old way
@@ -172,7 +180,13 @@ def parseItem(s):
         inputHQ = str(l[5]) if len(l) > 5 else None
 
         if inputName in materialDict:
+            print(f"material {inputName} in materialDict")
+            print(f"materialNeeded= {inputNeeded}")
+            print(f"materialDict[{inputName}].needed= {materialDict[inputName].needed}")
+        
             inputNeeded = inputNeeded + materialDict[inputName].needed
+
+            print(f"inputNeeded= {inputNeeded}")
 
         return inputNeeded, inputName, inputInventory, inputBank, inputType, inputHQ
 
@@ -246,7 +260,7 @@ def printAll():
         color = Fore.RESET
         if materialNeeded > materialInInventory + materialInBank:
             color = Fore.RED
-        print(f"{color}({materialType}) {materialNeeded} {materialName}: inv: {materialInInventory} bank: {materialInBank} {materialHQ}{Style.RESET_ALL}")
+        print(f"{color}({materialType}) {materialNeeded} {materialName}: inv: {materialInInventory} bank: {materialInBank} {materialHQ} ){Style.RESET_ALL}")
     """
     for i in oldneeded.keys():
         color=Fore.RESET
