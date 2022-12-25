@@ -51,6 +51,8 @@ def initializeStructures():
 
 # loads 2.0 format
 def askToLoad():
+    craftDict = {}
+    materialDict = {}
     s=input("Load previous list?\n> ")
     if s.lower() == "y":
         with open("shoppinglist.txt","r") as file:
@@ -102,9 +104,10 @@ def addTopCraft():
     printAll()
     askToSave()
 
-
 def parseCraft(s, level=0):
     l = s.split(".") # Needed.Name.Crafter (top) ||  Quantity.Name.Crafter (med)
+    # if type(l[0]) != type(0):
+    #     l.insert(0,1)
     if len(l) > 5:
         print("invalid input")
     elif len(l) < 2:
@@ -336,7 +339,3 @@ def addCraftToList(dest, level, num, ele):
         level.append(ele)
         dest[ele] = int(num)
 
-# program starts here
-oldtopCrafts, oldmedCrafts, oldneeded, oldcrafts, oldinv, oldbank = initializeOldVariables()
-craftDict, materialDict = initializeStructures()
-askToLoad()
