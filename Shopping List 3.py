@@ -104,8 +104,6 @@ def addTopCraft():
 
 def parseCraft(s, level=0):
     l = s.split(".") # Needed.Name.Crafter (top) ||  Quantity.Name.Crafter (med)
-    if type(l[0]) != type(0):
-        l.insert(0,1)
     if len(l) > 5:
         print("invalid input")
     elif len(l) < 2:
