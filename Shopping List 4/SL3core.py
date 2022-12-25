@@ -84,13 +84,13 @@ def askToLoad():
         printAll()
         s = input("Add to this list?\n> ")
         if s.lower() == "y":
-            addTopCraft()
+            addTopCraft(craftDict, materialDict)
     else:
         craftDict.clear()
         materialDict.clear()
-        addTopCraft()
+        addTopCraft(craftDict, materialDict)
 
-def addTopCraft():
+def addTopCraft(craftDict, materialDict):
     print("Add top-level craft or 'done'")
     print("Format:")
     while True:
@@ -98,13 +98,13 @@ def addTopCraft():
         if s.lower() == "done":
             break
         else:
-            parseCraft(s,0)
-            addBankMats()
+            parseCraft(craftDict, materialDict, s, 0)
+            addBankMats(craftDict, materialDict)
     materialSort()
-    printAll()
-    askToSave()
+    printAll(craftDict, materialDict)
+    askToSave(craftDict, materialDict)
 
-def parseCraft(s, level=0):
+def parseCraft(craftDict, materialDict, s, level=0):
     l = s.split(".") # Needed.Name.Crafter (top) ||  Quantity.Name.Crafter (med)
     # if type(l[0]) != type(0):
     #     l.insert(0,1)
@@ -131,7 +131,7 @@ def parseCraft(s, level=0):
             craftNeeded = craftNeeded + int(craftDict[craftName].needed)
         craftDict[craftName] = Craft(craftName,craftJob,craftNeeded,None,craftLevel,craftLess,craftLessHQ)
     
-def addBankMats():
+def addBankMats(craftDict, materialDict):
     print("Add crafting materials or 'done'")
     print("Format: (optional)")
     while True:
@@ -139,7 +139,7 @@ def addBankMats():
         if s.lower() == "done":
             break
         else:
-            needed, name, inv, bank, type, HQ = parseItem(s)
+            needed, name, inv, bank, type, HQ = parseItem(craftDict, materialDict, s)
             #needed, name, inv, bank, type, HQ = parseItem(s)
             #if name in materialDict:
             #    print(f"material {name} in materialDict")
@@ -164,9 +164,9 @@ def addBankMats():
                 print("invalid input")
             """
     # outside the while loop
-    addMidCrafts()
+    addMidCrafts(craftDict, materialDict)
 
-def parseItem(s):
+def parseItem(craftDict, materialDict, s):
     l = s.split(".")
     if len(l) > 6 :
         print("invalid input")
@@ -215,7 +215,7 @@ def parseItem(s):
         materialDict[materialName] = (materialQuantity, materialInInventory, materialInBank, materialType, materialHQ)
         """
 
-def addMidCrafts():
+def addMidCrafts(craftDict, materialDict):
     print("Add intermediary crafts or 'done'")
     print("Add top to bottom, right to left")
     print("Format:")
@@ -224,7 +224,7 @@ def addMidCrafts():
         if s.lower() == "done":
             break
         else:
-            parseCraft(s, 1)
+            parseCraft(craftDict, materialDict, s, 1)
 
             # old dict method
             """
@@ -245,7 +245,7 @@ def addMidCrafts():
 def materialSort():
     skip
 
-def printAll():
+def printAll(craftDict, materialDict):
     print("")
     print("")
     print("Remove from bank:")
@@ -282,9 +282,9 @@ def printAll():
     for i in oldtopCrafts:
         print(f"{crafts[i]} {i}")
     """
-    craftPrint(1)
+    craftPrint(1, craftDict, materialDict)
     print("")
-    craftPrint(0)
+    craftPrint(0, craftDict, materialDict)
     """
     for i in range(len(craftList)):
         craftName = craftList[i][0]
@@ -296,7 +296,7 @@ def printAll():
 
     """
 
-def craftPrint(level):
+def craftPrint(level, craftDict, materialDict):
     for key,value in craftDict.items():
         craftName = str(key)
         craftJob = str(value.job)
@@ -307,7 +307,7 @@ def craftPrint(level):
         if craftLevel == level:
             print(f"{craftJob}: {craftNeeded} {craftName} - (inv: {craftLess}, HQ: {craftLessHQ}")
  
-def askToSave():
+def askToSave(craftDict, materialDict):
     s=input("Save this list?\n")
     if s.lower() == "y":
         with open("shoppinglist.txt","w") as file:
