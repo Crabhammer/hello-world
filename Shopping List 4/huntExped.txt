@@ -1,0 +1,151 @@
+1	Animal skin icon1.png  Animal Skin	15	-	40m	1	500
+2	Animal sinew icon1.png  Animal Sinew	15	-	40m	1	800
+3	Shriekshroom icon1.png  Shriekshroom	15	-	40m	1	800
+4	Honey icon1.png  Honey	15	-	40m	1	1,400
+5	Ram horn icon1.png  Ram Horn	15	-	40m	1	1,400
+6	Beastkin blood icon1.png  Beastkin Blood	15	-	40m	1	3,000
+7	Marmot meat icon1.png  Marmot Meat	15	-	40m	1	3,000
+8	Animal hide icon1.png  Animal Hide	15	-	40m	1	5,000
+9	Mutton loin icon1.png  Mutton Loin	15	-	40m	1	5,000
+10	Beast sinew icon1.png  Beast Sinew	15	-	40m	1	7,400
+10	Bat fang icon1.png  Bat Fang	15	-	40m	1	7,400
+10	Red landtrap leaf icon1.png  Red Landtrap Leaf	15	-	40m	1	7,400
+11	Dodo tenderloin icon1.png  Dodo Tenderloin	15	-	40m	1	7,400
+11	Jellyfish cnida icon1.png  Jellyfish Cnida	15	-	40m	1	7,400
+12	Mole meat icon1.png  Mole Meat	15	-	40m	1	10,200
+12	Puk wing icon1.png  Puk Wing	15	-	40m	1	10,200
+13	Viscous secretions icon1.png  Viscous Secretions	15	-	40m	1	10,200
+14	Dodo egg icon1.png  Dodo Egg	15	-	40m	1	13,100
+14	Bat wing icon1.png  Bat Wing	15	-	40m	1	13,100
+15	Antelope horn icon1.png  Antelope Horn	15	-	40m	1	13,100
+15	Goobbue fang icon1.png  Goobbue Fang	15	-	40m	1	13,100
+15	Yellow yarzon leg icon1.png  Yellow Yarzon Leg	15	-	40m	1	13,100
+16	Imp wing icon1.png  Imp Wing	15	-	40m	1	17,400
+17	Jellyfish umbrella icon1.png  Jellyfish Umbrella	15	-	40m	1	17,400
+18	Aldgoat skin icon1.png  Aldgoat Skin	15	-	40m	1	21,900
+19	Dodo feather icon1.png  Dodo Feather	15	-	40m	1	21,900
+20	Green megalocrab shell icon1.png  Green Megalocrab Shell	15	-	40m	1	24,900
+21	Antelope shank icon1.png  Antelope Shank	15	1	40m	1	24,900
+22	Megalocrab leg icon1.png  Megalocrab Leg	15	2	40m	1	26,100
+23	Acidic secretions icon1.png  Acidic Secretions	15	3	40m	1	26,100
+24	Diremite web icon1.png  Diremite Web	15	4	40m	1	27,200
+25	Aldgoat chuck icon1.png  Aldgoat Chuck	15	5	40m	1	27,200
+25	Diremite sinew icon1.png  Diremite Sinew	15	5	40m	1	27,200
+25	Aldgoat horn icon1.png  Aldgoat Horn	15	5	40m	1	27,200
+25	Wolf fang icon1.png  Wolf Fang	15	5	40m	1	27,200
+25	Treant sap icon1.png  Treant Sap	15	5	40m	1	27,200
+25	Scalekin blood icon1.png  Scalekin Blood	15	5	40m	1	27,200
+26	Gigantoad skin icon1.png  Gigantoad Skin	15	6	40m	1	32,100
+26	Bomb ash icon1.png  Bomb Ash	15	6	40m	1	32,100
+27	Puk egg icon1.png  Puk Egg	15	7	40m	1	32,100
+28	Night milk icon1.png  Night Milk	15	8	40m	1	34,500
+28	Orobon liver icon1.png  Orobon Liver	15	8	40m	1	34,500
+29	Blue yarzon leg icon1.png  Blue Yarzon Leg	15	9	40m	1	34,500
+29	Cactuar needle icon1.png  Cactuar Needle	15	9	40m	1	34,500
+30	Sandworm fang icon1.png  Sandworm Fang	15	10	40m	1	35,200
+30	Blue landtrap leaf icon1.png  Blue Landtrap Leaf	15	10	40m	1	35,200
+30	Morbol vine icon1.png  Morbol Vine	15	10	40m	1	35,200
+31	Formic acid icon1.png  Formic Acid	15	11	40m	1	35,200
+32	Raptor shank icon1.png  Raptor Shank	15	12	40m	1	38,600
+32	Hippogryph sinew icon1.png  Hippogryph Sinew	15	12	40m	1	38,600
+33	Boar hide icon1.png  Boar Hide	15	13	40m	1	38,600
+34	Peiste skin icon1.png  Peiste Skin	15	14	40m	1	40,800
+35	Fleece icon1.png  Fleece	15	15	40m	1	40,800
+36	Spoken blood icon1.png  Spoken Blood	15	16	40m	1	44,800
+37	Karakul skin icon1.png  Karakul Skin	15	17	40m	1	44,800
+38	Grenade ash icon1.png  Grenade Ash	15	18	40m	1	49,000
+39	Raptor sinew icon1.png  Raptor Sinew	15	19	40m	1	49,000
+40	Ochu vine icon1.png  Ochu Vine	15	20	40m	1	52,600
+41	Pudding flesh icon1.png  Pudding Flesh	15	21	40m	1	52,600
+42	Basilisk egg icon1.png  Basilisk Egg	15	22	40m	1	54,200
+43	Buffalo sirloin icon1.png  Buffalo Sirloin	15	23	40m	1	54,200
+44	Apkallu egg icon1.png  Apkallu Egg	15	24	40m	1	55,700
+45	Apkallu down icon1.png  Apkallu Down	15	25	40m	1	55,700
+46	Ahriman wing icon1.png  Ahriman Wing	15	26	40m	1	61,900
+47	Eft tail icon1.png  Eft Tail	15	27	40m	1	61,900
+48	Raptor skin icon1.png  Raptor Skin	15	28	40m	1	66,400
+49	Snurble tufts icon1.png  Snurble Tufts	15	29	40m	1	66,400
+49	Ogre horn icon1.png  Ogre Horn	15	29	40m	1	66,400
+51	Yak milk icon1.png  Yak Milk	15	100	40m	1	122,000
+51	Gastornis Egg.png  Gastornis Egg	15	100	40m	1	122,000
+51	Archaeornis Skin.png  Archaeornis Skin	15	100	40m	1	122,000
+51	Icetrap Leaf.png  Icetrap Leaf	15	100	40m	1	122,000
+51	Gelato Flesh.png  Gelato Flesh	15	100	40m	1	122,000
+52	Loaghtan chump icon1.png  Loaghtan Chump	15	105	40m	1	154,200
+52	Yeti Fang.png  Yeti Fang	15	105	40m	1	154,200
+52	Deepeye Tears.png  Deepeye Tears	15	105	40m	1	154,200
+52	Bear fat icon1.png  Bear Fat	15	105	40m	1	154,200
+53	Wyvern Skin.png  Wyvern Skin	15	110	40m	1	154,200
+53	Wyvern wing icon1.png  Wyvern Wing	15	110	40m	1	154,200
+54	Biast scales icon1.png  Biast Scales	15	113	40m	1	186,000
+55	Dhalmel Meat.png  Dhalmel Meat	15	116	40m	1	186,000
+55	Dhalmel Hide.png  Dhalmel Hide	15	116	40m	1	186,000
+56	Drake scales icon1.png  Drake Scales	15	119	40m	1	216,800
+56	Dhalmel Saliva.png  Dhalmel Saliva	15	119	40m	1	216,800
+57	Okeanis egg icon1.png  Okeanis Egg	15	122	40m	1	216,800
+57	Dragon skin icon1.png  Dragon Skin	15	122	40m	1	216,800
+57	Dragon fang icon1.png  Dragon Fang	15	122	40m	1	216,800
+58	Okeanis tail icon1.png  Okeanis Tail	15	125	40m	1	247,100
+58	Cockatrice thigh icon1.png  Cockatrice Thigh	15	125	40m	1	247,100
+58	Crawler cocoon icon1.png  Crawler Cocoon	15	125	40m	1	247,100
+58	Dragon scale icon1.png  Dragon Scale	15	125	40m	1	247,100
+58	Dragon blood icon1.png  Dragon Blood	15	125	40m	1	247,100
+59	Amphiptere skin icon1.png  Amphiptere Skin	15	128	40m	1	247,100
+59	Griffin hide icon1.png  Griffin Hide	15	128	40m	1	247,100
+59	Griffin talon icon1.png  Griffin Talon	15	128	40m	1	247,100
+60	Chimera mane icon1.png  Chimera Mane	15	130	40m	1	251,000
+61	Gagana egg icon1.png  Gagana Egg	15	235	40m	1	251,000
+61	Muud suud horn icon1.png  Muud Suud Horn	15	235	40m	1	251,000
+62	Gagana skin icon1.png  Gagana Skin	15	245	40m	1	261,500
+62	Rhino beetle carapace icon1.png  Rhino Beetle Carapace	15	245	40m	1	261,500
+62	Moth scales icon1.png  Moth Scales	15	245	40m	1	261,500
+63	Hornbill tenderloin icon1.png  Hornbill Tenderloin	15	250	40m	1	261,500
+63	Bombfish spine icon1.png  Bombfish Spine	15	250	40m	1	261,500
+64	Gyuki hide icon1.png  Gyuki Hide	15	253	40m	1	262,000
+65	Dzo horn icon1.png  Dzo Horn	15	256	40m	1	262,000
+66	Steppe milk icon1.png  Steppe Milk	15	259	40m	1	265,800
+66	Dzo chuck icon1.png  Dzo Chuck	15	259	40m	1	265,800
+66	Tiger skin icon1.png  Tiger Skin	15	259	40m	1	265,800
+67	Halgai mane icon1.png  Halgai Mane	15	262	40m	1	265,800
+67	Gazelle horn icon1.png  Gazelle Horn	15	262	40m	1	265,800
+68	Manzasiri hair icon1.png  Manzasiri Hair	15	265	40m	1	283,300
+68	Marid hide icon1.png  Marid Hide	15	265	40m	1	283,300
+69	Jhammel haunch icon1.png  Jhammel Haunch	15	268	40m	1	283,300
+69	Twincoon icon1.png  Twincoon	15	268	40m	1	283,300
+70	Gazelle hide icon1.png  Gazelle Hide	15	270	40m	1	301,800
+70	True griffin hide icon1.png  True Griffin Hide	15	270	40m	1	301,800
+70	Island wolf fang icon1.png  Island Wolf Fang	15	270	40m	1	301,800
+71	Rail tenderloin icon1.png  Rail Tenderloin	15	370	50m	1	301,800
+71	Smilodon skin icon1.png  Smilodon Skin	15	370	50m	1	301,800
+71	Hoptrap leaf icon1.png  Hoptrap Leaf	15	370	50m	1	301,800
+71	Silkmoth scales icon1.png  Silkmoth Scales	15	370	50m	1	301,800
+72	Green glider skin icon1.png  Green Glider Skin	15	375	50m	1	332,400
+73	Lorikeet egg icon1.png  Lorikeet Egg	15	380	50m	1	332,400
+73	Lorikeet down icon1.png  Lorikeet Down	15	380	50m	1	332,400
+74	Atrociraptor skin icon1.png  Atrociraptor Skin	15	383	50m	1	377,100
+75	Vampire vine sap icon1.png  Vampire Vine Sap	15	386	50m	1	377,100
+75	Vampire cup vine icon1.png  Vampire Cup Vine	15	386	50m	1	377,100
+76	Ovim meat icon1.png  Ovim Meat	15	389	50m	1	437,700
+77	Ovim fleece icon1.png  Ovim Fleece	15	392	50m	1	437,700
+77	Zonure skin icon1.png  Zonure Skin	15	392	50m	1	437,700
+78	Sea swallow skin icon1.png  Sea Swallow Skin	15	395	50m	1	525,600
+79	Cubus flesh icon1.png  Cubus Flesh	15	398	50m	1	525,600
+79	Hydrozoan umbrella icon1.png  Hydrozoan Umbrella	15	398	50m	1	525,600
+80	Hamsa tenderloin icon1.png  Hamsa Tenderloin	15	495	50m	1	599,200
+80	Amra icon1.png  Amra	15	495	50m	1	599,200
+80	Gaja hide icon1.png  Gaja Hide	15	495	50m	1	599,200
+81	Yakow chuck icon1.png  Yakow Chuck	15	500	1h	1	694,200
+82	Ovibos milk icon1.png  Ovibos Milk	15	505	1h	1	694,200
+82	Almasty fur icon1.png  Almasty Fur	15	505	1h	1	694,200
+82	Luncheon toad skin icon1.png  Luncheon Toad Skin	15	505	1h	1	694,200
+83	Lunatender blossom icon1.png  Lunatender Blossom	15	510	1h	1	794,800
+84	Saiga hide icon1.png  Saiga Hide	15	513	1h	1	794,800
+84	Dynamite ash icon1.png  Dynamite Ash	15	513	1h	1	794,800
+84	Mousse flesh icon1.png  Mousse Flesh	15	513	1h	1	794,800
+86	Bird of elpis breast icon1.png  Bird of Elpis Breast	12	519	1h	1	923,100
+86	Egg of elpis icon1.png  Egg of Elpis	12	519	1h	1	923,100
+86	Kumbhira skin icon1.png  Kumbhira Skin	12	519	1h	1	923,100
+86	Petalouda scales icon1.png  Petalouda Scales	12	519	1h	1	923,100
+88	Ophiotauros hide icon1.png  Ophiotauros Hide	10	525	1h	1	1,045,900
+88	Berkanan sap icon1.png  Berkanan Sap	10	525	1h	1	1,045,900
+89	Dynamis crystal icon1.png  Dynamis Crystal	10	528	1h	1	1,083,800

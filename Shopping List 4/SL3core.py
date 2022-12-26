@@ -259,6 +259,7 @@ def printAll(craftDict, materialDict):
             materialHQ = ""
         else:
             materialHQ = value.HQ
+        materialAcquire = materialLookup(key)
         color = Fore.RESET
         if materialNeeded > materialInInventory + materialInBank:
             color = Fore.RED
@@ -295,6 +296,13 @@ def printAll(craftDict, materialDict):
             print(f"{craftCrafter}: {craftQuantity} {craftName}")
 
     """
+
+def materialLookup(key):
+    with open("huntExped.txt", "r") as file:
+        hunt = file.readlines()
+        for line in hunt:
+            print(line)
+    skip
 
 def craftPrint(level, craftDict, materialDict):
     for key,value in craftDict.items():

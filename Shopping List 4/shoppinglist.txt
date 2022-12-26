@@ -1,0 +1,20 @@
+bank
+276.Koppranickel Sand.67.0.Stone
+61.Iron Ore.3.25.Stone
+4.Bloodhemp.37.0.Cloth
+4.Wildfowl Feather.0.17.Cloth
+1.Copper Ore.0.6.None
+55.Bloodhempen Yarn.11.0.Cloth
+30.Gagana Skin.12.0.Leather
+10.Gyr Abanian Alumen.23.0.Reagent
+midCrafts
+9.High Steel Nugget.ARM.1.0.0
+3.Bloodhempen Yarn.WVR.1.0.0
+3.Bloodhempen Cloth.WVR.1.0.0
+1.Koppranickel Nugget.GSM.1.0.0
+5.Gagana Leather.LTW.1.0.0
+1.High Steel Helm of Maiming.ARM.0.0.0
+1.HS Scale Mail of Maiming.ARM.0.0.0
+1.HS Armguards of Maiming.ARM.0.0.0
+1.Gaganaskin Hose of Maiming.LTW.0.0.0
+1.Gaganaskin Leg Guards of Maiming.LTW.0.0.0

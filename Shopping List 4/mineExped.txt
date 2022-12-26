@@ -1,0 +1,238 @@
+1	Fire Shard.png  Fire Shard	none	1	1	60	1133
+1	Ice shard icon1.png  Ice Shard	none	1	1	60	1133
+1	Wind shard icon1.png  Wind Shard	none	1	1	60	1133
+1	Earth shard icon1.png  Earth Shard	none	1	1	60	1133
+1	Lightning shard icon1.png  Lightning Shard	none	1	1	60	1133
+1	Water Shard.png  Water Shard	none	1	1	60	1133
+2	Copper ore icon1.png  Copper Ore	none	1	1	15	1133
+3	Muddy water icon1.png  Muddy Water	none	1	1	15	1133
+5	Bone chip icon1.png  Bone Chip	none	1	1	15	1133
+6	Tin ore icon1.png  Tin Ore	none	1	1	15	4413
+7	Raw sunstone icon1.png  Raw Sunstone	none	1	1	15	4413
+7	Raw lapis lazuli icon1.png  Raw Lapis Lazuli	none	1	1	15	4413
+8	Soiled femur icon1.png  Soiled Femur	none	1	1	15	4413
+9	Zinc ore icon1.png  Zinc Ore	none	1	1	15	4413
+10	Obsidian icon1.png  Obsidian	30	1	1	15	4413
+10	Potters clay icon1.png  Potter's Clay	30	1	1	15	4413
+11	Fine sand icon1.png  Fine Sand	40	1	1	15	8800
+11	Copper sand icon1.png  Copper Sand	40	1	1	15	8800
+12	Rock salt icon1.png  Rock Salt	41	1	1	15	8800
+13	Ragstone icon1.png  Ragstone	43	1	1	15	8800
+14	Iron ore icon1.png  Iron Ore	44	1	1	15	8800
+14	Iron sand icon1.png  Iron Sand	44	1	1	15	8800
+15	Cinnabar icon1.png  Cinnabar	45	1	1	15	8800
+16	Raw malachite icon1.png  Raw Malachite	58	1	1	15	13600
+17	Raw sphene icon1.png  Raw Sphene	60	1	1	15	13600
+17	Raw fluorite icon1.png  Raw Fluorite	60	1	1	15	13600
+17	Limestone icon1.png  Limestone	60	1	1	15	13600
+18	Raw danburite icon1.png  Raw Danburite	62	1	1	15	13600
+19	Sunrise tellin icon1.png  Sunrise Tellin	63	1	1	15	13600
+19	Alumen icon1.png  Alumen	63	1	1	15	13600
+20	Mudstone icon1.png  Mudstone	65	1	1	15	13600
+21	Earth rock icon1.png  Earth Rock	75	1	1	15	20494
+22	Silver sand icon1.png  Silver Sand	78	1	1	15	20494
+23	Fire rock icon1.png  Fire Rock	81	1	1	15	20494
+23	Ice rock icon1.png  Ice Rock	81	1	1	15	20494
+24	Wind rock icon1.png  Wind Rock	84	1	1	15	20494
+24	Lightning rock icon1.png  Lightning Rock	84	1	1	15	20494
+24	Effervescent water icon1.png  Effervescent Water	84	1	1	15	20494
+25	Silver ore icon1.png  Silver Ore	87	1	1	15	20494
+25	Water rock icon1.png  Water Rock	87	1	1	15	20494
+26	Bomb ash icon1.png  Bomb Ash	90	1	1	15	30000
+26	Fire crystal icon1.png  Fire Crystal	90	1	1	15	30000
+26	Ice crystal icon1.png  Ice Crystal	90	1	1	15	30000
+26	Wind crystal icon1.png  Wind Crystal	90	1	1	15	30000
+26	Earth crystal icon1.png  Earth Crystal	90	1	1	15	30000
+26	Lightning crystal icon1.png  Lightning Crystal	90	1	1	15	30000
+26	Water Crystal.png  Water Crystal	90	1	1	15	30000
+27	Silex icon1.png  Silex	92	1	1	15	30000
+28	Wyvern obsidian icon1.png  Wyvern Obsidian	95	1	1	15	30000
+28	Blue pigment icon1.png  Blue Pigment	95	1	1	15	30000
+28	Red pigment icon1.png  Red Pigment	95	1	1	15	30000
+28	Yellow pigment icon1.png  Yellow Pigment	95	1	1	15	30000
+28	Grey pigment icon1.png  Grey Pigment	95	1	1	15	30000
+28	Brown pigment icon1.png  Brown Pigment	95	1	1	15	30000
+28	Green pigment icon1.png  Green Pigment	95	1	1	15	30000
+28	Purple pigment icon1.png  Purple Pigment	95	1	1	15	30000
+29	Brimstone icon1.png  Brimstone	96	1	1	15	30000
+30	Siltstone icon1.png  Siltstone	99	1	1	15	30000
+30	Saltpeter icon1.png  Saltpeter	99	1	1	30	30000
+30	Grade 1 la noscean topsoil icon1.png  Grade 1 La Noscean Topsoil	99	1	1	1	30000
+30	Grade 1 shroud topsoil icon1.png  Grade 1 Shroud Topsoil	99	1	1	1	30000
+30	Grade 1 thanalan topsoil icon1.png  Grade 1 Thanalan Topsoil	99	1	1	1	30000
+31	Raw garnet icon1.png  Raw Garnet	101	1	1	15	39618
+31	Granite icon1.png  Granite	101	1	1	15	39618
+32	Raw heliodor icon1.png  Raw Heliodor	103	1	1	15	39618
+33	Raw goshenite icon1.png  Raw Goshenite	105	1	1	15	39618
+33	Raw peridot icon1.png  Raw Peridot	105	1	1	15	39618
+33	Mythril sand icon1.png  Mythril Sand	105	1	1	15	39618
+34	Mythril ore icon1.png  Mythril Ore	107	1	1	15	39618
+34	Raw amethyst icon1.png  Raw Amethyst	107	1	1	15	39618
+35	Raw aquamarine icon1.png  Raw Aquamarine	109	1	1	15	39618
+36	Raw tourmaline icon1.png  Raw Tourmaline	112	1	1	15	48784
+37	Raw spinel icon1.png  Raw Spinel	113	1	1	15	48784
+38	Raw zircon icon1.png  Raw Zircon	116	1	1	15	48784
+39	Jade icon1.png  Jade	118	1	1	15	48784
+40	Black alumen icon1.png  Black Alumen	120	1	1	15	48784
+40	Grenade ash icon1.png  Grenade Ash	120	1	1	15	48784
+40	Grade 2 la noscean topsoil icon1.png  Grade 2 La Noscean Topsoil	120	1	1	1	48784
+40	Grade 2 shroud topsoil icon1.png  Grade 2 Shroud Topsoil	120	1	1	1	48784
+40	Grade 2 thanalan topsoil icon1.png  Grade 2 Thanalan Topsoil	120	1	1	1	48784
+41	Raw turquoise icon1.png  Raw Turquoise	125	1	1	15	57896
+42	Electrum sand icon1.png  Electrum Sand	127	1	1	15	57896
+43	Electrum ore icon1.png  Electrum Ore	129	1	1	15	57896
+44	Raw amber icon1.png  Raw Amber	131	1	1	15	57896
+45	Raw rubellite icon1.png  Raw Rubellite	133	1	1	15	57896
+45	Marble icon1.png  Marble	133	1	1	15	57896
+46	Basilisk egg icon1.png  Basilisk Egg	140	1	1	15	70533
+47	Cobalt ore icon1.png  Cobalt Ore	142	1	1	15	70533
+48	Adamantoise shell icon1.png  Adamantoise Shell	144	1	1	15	70533
+49	Ogre horn icon1.png  Ogre Horn	147	1	1	15	70533
+50	Astral rock icon1.png  Astral Rock	149	1	1	6	105840
+50	Black limestone icon1.png  Black Limestone	149	1	1	15	105840
+50	Dark matter cluster icon1.png  Dark Matter Cluster	149	1	1	3	105840
+50	Darksteel ore icon1.png  Darksteel Ore	149	1	1	6	105840
+50	Ferberite icon1.png  Ferberite	149	1	1	3	105840
+50	Gold ore icon1.png  Gold Ore	149	1	1	6	105840
+50	Gold sand icon1.png  Gold Sand	149	1	1	6	105840
+50	Grade 3 la noscean topsoil icon1.png  Grade 3 La Noscean Topsoil	149	1	1	1	105840
+50	Grade 3 shroud topsoil icon1.png  Grade 3 Shroud Topsoil	149	1	1	1	105840
+50	Grade 3 thanalan topsoil icon1.png  Grade 3 Thanalan Topsoil	149	1	1	1	105840
+50	Gregarious worm icon1.png  Gregarious Worm	149	1	1	2	105840
+50	Native gold icon1.png  Native Gold	149	1	1	3	105840
+50	Platinum ore icon1.png  Platinum Ore	149	1	1	3	105840
+50	Pumice icon1.png  Pumice	149	1	1	3	105840
+50	Raw diamond icon1.png  Raw Diamond	149	1	1	3	105840
+50	Raw emerald icon1.png  Raw Emerald	149	1	1	3	105840
+50	Raw iolite icon1.png  Raw Iolite	149	1	1	3	105840
+50	Raw ruby icon1.png  Raw Ruby	149	1	1	3	105840
+50	Raw sapphire icon1.png  Raw Sapphire	149	1	1	3	105840
+50	Raw emerald icon1.png  Raw Topaz	149	1	1	3	105840
+50	Unaspected crystal icon1.png  Unaspected Crystal	149	1	1	3	105840
+50	Virgin basilisk egg icon1.png  Virgin Basilisk Egg	149	1	1	3	105840
+50	Volcanic rock salt icon1.png  Volcanic Rock Salt	149	1	1	6	105840
+50	Yellow copper ore icon1.png  Yellow Copper Ore	149	1	1	5	105840
+51	Dragon obsidian icon1.png  Dragon Obsidian	311	1	1	15	105840
+51	Mythrite sand icon1.png  Mythrite Sand	311	1	1	15	105840
+51	Pyrite icon1.png  Pyrite	311	1	1	3	105840
+51	Raw agate icon1.png  Raw Agate	311	1	1	15	105840
+52	Raw tigers eye icon1.png  Raw Tiger's Eye	314	1	1	30	155520
+52	Yellow quartz icon1.png  Yellow Quartz	314	1	1	7	155520
+53	Chalcocite icon1.png  Chalcocite	362	1	1	5	155520
+53	Mythrite ore icon1.png  Mythrite Ore	362	1	1	15	155520
+53	Raw larimar icon1.png  Raw Larimar	362	1	1	20	155520
+54	Dravanian spring water icon1.png  Dravanian Spring Water	363	1	1	20	221760
+54	Limonite icon1.png  Limonite	363	1	1	5	221760
+54	Raw mormorion icon1.png  Raw Mormorion	363	1	1	20	221760
+55	Green quartz icon1.png  Green Quartz	388	1	1	5	221760
+55	Raw star ruby icon1.png  Raw Star Ruby	388	1	1	20	221760
+55	Raw star sapphire icon1.png  Raw Star Sapphire	388	1	1	20	221760
+55	Titanium Ore.png  Titanium Ore	388	1	1	15	221760
+56	Abalathian rock salt icon1.png  Abalathian Rock Salt	389	1	1	5	299520
+56	Fossilized dragon bone icon1.png  Fossilized Dragon Bone	389	1	1	20	299520
+56	Hardsilver sand icon1.png  Hardsilver Sand	389	1	1	20	299520
+57	Abalathian spring water icon1.png  Abalathian Spring Water	392	1	1	20	637300
+57	Light kidney ore icon1.png  Light Kidney Ore	392	1	1	5	299520
+57	Raw opal icon1.png  Raw Opal	392	1	1	20	299520
+58	Cloud mica icon1.png  Cloud Mica	396	1	1	20	793500
+58	Hardsilver ore icon1.png  Hardsilver Ore	396	1	1	15	793500
+58	Raw carnelian icon1.png  Raw Carnelian	396	1	1	20	793500
+58	Red quartz icon1.png  Red Quartz	392	1	1	5	793500
+59	Aurum regis sand icon1.png  Aurum Regis Sand	401	1	1	20	793500
+59	Cuprite icon1.png  Cuprite	401	1	1	5	793500
+59	Raw citrine icon1.png  Raw Citrine	401	1	1	20	793500
+59	Tektite icon1.png  Tektite	401	1	1	20	793500
+60	Adamantite ore icon1.png  Adamantite Ore	602	1	1	5	886000
+60	Eventide jade icon1.png  Eventide Jade	602	1	1	3	886000
+60	Raw chrysolite icon1.png  Raw Chrysolite	405	1	1	20	886000
+60	Adamantite ore icon1.png  Wyrm Obsidian	405	1	1	20	886000
+60	Astral moraine icon1.png  Astral Moraine	602	1	1	3	886000
+60	Aurum regis ore icon1.png  Aurum Regis Ore	602	1	1	3	886000
+60	Beastkin horn icon1.png  Beastkin Horn	602	1	1	15	886000
+60	Blue quartz icon1.png  Blue Quartz	602	1	1	3	886000
+60	Lumythrite ore icon1.png  Lumythrite Ore	602	1	1	3	886000
+60	Lumythrite sand icon1.png  Lumythrite Sand	602	1	1	15	886000
+60	Meteorite icon1.png  Meteorite	602	1	1	3	886000
+60	Red alumen icon1.png  Red Alumen	602	1	1	3	886000
+60	Smithsonite ore icon1.png  Smithsonite Ore	602	1	1	3	886000
+60	Tungstite icon1.png  Sun Mica	602	1	1	3	886000
+60	Violet quartz icon1.png  Violet Quartz	602	1	1	3	886000
+60	Gyr abanian alumen icon1.png  Gyr Abanian Alumen	644	1	1	3	886000
+60	Luminium ore icon1.png  Luminium Ore	644	1	1	3	886000
+60	Raw triphane icon1.png  Raw Triphane	644	1	1	3	886000
+60	Tungstite icon1.png  Tungstite	644	1	1	3	886000
+60	Zeolite ore icon1.png  Zeolite Ore	644	1	1	3	886000
+61	Gyr abanian mineral water icon1.png  Gyr Abanian Mineral Water	700	1	1	30	886000
+61	Koppranickel sand icon1.png  Koppranickel Sand	700	1	1	30	886000
+61	Stiperstone icon1.png  Stiperstone	700	1	1	30	886000
+62	Raw kyanite icon1.png  Raw Kyanite	714	1	1	30	893700
+62	Slate icon1.png  Slate	714	1	1	30	893700
+63	Diatomite icon1.png  Diatomite	728	1	1	30	893700
+63	Koppranickel ore icon1.png  Koppranickel Ore	728	1	1	30	893700
+64	Crescent spring water icon1.png  Crescent Spring Water	734	1	1	30	932700
+65	Doman iron ore icon1.png  Doman Iron Ore	739	1	1	30	932700
+65	Raw star spinel icon1.png  Raw Star Spinel	739	1	1	7	932700
+66	Durium sand icon1.png  Durium Sand	744	1	1	30	1008800
+66	Raw azurite icon1.png  Raw Azurite	744	1	1	7	1008800
+67	Doman iron sand icon1.png  Doman Iron Sand	759	1	1	30	1008800
+68	Durium ore icon1.png  Durium Ore	775	1	1	30	1139600
+68	Raw imperial jade icon1.png  Raw Imperial Jade	775	1	1	7	1139600
+69	Ala mhigan salt crystal icon1.png  Ala Mhigan Salt Crystal	790	1	1	7	1139600
+69	Palladium sand icon1.png  Palladium Sand	790	1	1	30	1139600
+70	Molybdenum ore icon1.png  Molybdenum Ore	805	1	1	30	1388100
+70	Raw rhodonite icon1.png  Raw Rhodonite	805	1	1	7	1388100
+70	Chromite ore icon1.png  Chromite Ore	875	1	1	7	1388100
+70	Gyr abanian spring water icon1.png  Gyr Abanian Spring Water	875	1	1	7	1388100
+70	Palladium ore icon1.png  Palladium Ore	875	1	1	7	1388100
+70	Azim spring water icon1.png  Azim Spring Water	1015	1	1	7	1388100
+70	Coarse saltpeter icon1.png  Coarse Saltpeter	1015	1	1	30	1388100
+70	Hawk's Eye Icon1.png  Hawk's Eye	1015	1	1	7	1388100
+70	Nightsteel ore icon1.png  Nightsteel Ore	1015	1	1	7	1388100
+70	Raw hematite icon1.png  Raw Hematite	1015	1	1	7	1388100
+70	Silvergrace ore icon1.png  Silvergrace Ore	1015	1	1	7	1388100
+70	Yellow alumen icon1.png  Yellow Alumen	1015	1	1	30	1388100
+70	Evergleam ore icon1.png  Evergleam Ore	1155	1	1	7	1388100
+70	Gyr abanian ore icon1.png  Gyr Abanian Ore	1155	1	1	7	1388100
+71	Hard mudstone icon1.png  Hard Mudstone	1190	1	1	30	1388100
+71	Truegold sand icon1.png  Truegold Sand	1190	1	1	30	1388100
+72	Raw diaspore icon1.png  Raw Diaspore	1225	1	1	7	1749900
+72	Truegold ore icon1.png  Truegold Ore	1225	1	1	30	1749900
+73	Highland spring water icon1.png  Highland Spring Water	1235	1	1	30	1749900
+74	Bluespirit ore icon1.png  Bluespirit Ore	1260	1	1	30	2233000
+74	Raw lazurite icon1.png  Raw Lazurite	1260	1	1	7	2233000
+75	Manasilver sand icon1.png  Manasilver Sand	1294	1	1	30	2233000
+76	Extra effervescent water icon1.png  Extra Effervescent Water	1327	1	1	30	2865000
+76	Raw triplite icon1.png  Raw Triplite	1327	1	1	7	2865000
+76	Titancopper sand icon1.png  Titancopper Sand	1327	1	1	30	2865000
+76	Volcanic tuff icon1.png  Volcanic Tuff	1327	1	1	30	2865000
+77	Titancopper ore icon1.png  Titancopper Ore	1360	1	1	30	2865000
+78	Raw petalite icon1.png  Raw Petalite	1393	1	1	7	3765000
+78	Underground spring water icon1.png  Underground Spring Water	1393	1	1	30	3765000
+79	Dimythrite sand icon1.png  Dimythrite Sand	1426	1	1	30	3765000
+80	Dimythrite ore icon1.png  Dimythrite Ore	1459	1	1	30	4330000
+80	Raw onyx icon1.png  Raw Onyx	1459	1	1	7	4330000
+80	Beryllium ore icon1.png  Beryllium Ore	1528	1	1	7	4330000
+80	Prismstone icon1.png  Prismstone	1528	1	1	7	4330000
+80	Tungsten ore icon1.png  Tungsten Ore	1528	1	1	7	4330000
+80	Ashen alumen icon1.png  Ashen Alumen	1584	1	1	7	4330000
+80	Brashgold ore icon1.png  Brashgold Ore	1584	1	1	7	4330000
+80	Fireheart cobalt icon1.png  Fireheart Cobalt	1584	1	1	7	4330000
+80	Purpure shell chip icon1.png  Purpure Shell Chip	1584	1	1	7	4330000
+80	Dolomite icon1.png  Dolomite	1782	1	1	9	599200
+80	Hard water icon1.png  Hard Water	1782	1	1	9	599200
+80	Solstice stone icon1.png  Solstice Stone	1782	1	1	9	599200
+81	Chloroschist icon1.png  Chloroschist	1815	1	1	15	694200
+81	High durium sand icon1.png  High Durium Sand	1815	1	1	15	694200
+81	Raw ametrine icon1.png  Raw Ametrine	1815	1	1	15	694200
+81	Sharlayan rock salt icon1.png  Sharlayan Rock Salt	1815	1	1	15	694200
+82	High durium ore icon1.png  High Durium Ore	1848	1	1	15	694200
+82	Pewter ore icon1.png  Pewter Ore	1848	1	1	15	694200
+83	Phrygian gold ore icon1.png  Phrygian Gold Ore	1914	1	1	15	794800
+84	Eblan alumen icon1.png  Eblan Alumen	1980	1	1	15	794800
+85	Bismuth ore icon1.png  Bismuth Ore	2027	1	1	15	828700
+86	Manganese ore icon1.png  Manganese Ore	2073	1	1	15	923100
+86	Raw blue zircon icon1.png  Raw Blue Zircon	2073	1	1	15	923100
+87	Annite icon1.png  Annite	2119	1	1	15	952900
+88	Ambrosial water icon1.png  Ambrosial Water	2165	1	1	15	1045900
+89	Chondrite icon1.png  Chondrite	2211	1	1	15	1083800
+90	Raw star quartz icon1.png  Raw Star Quartz	2258	1	1	15	1327800
