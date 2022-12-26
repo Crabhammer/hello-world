@@ -81,7 +81,7 @@ def askToLoad():
                         invHQ = int(l[4])
                         craftDict[name] = Craft(name,job,needed,None,0,inv,invHQ)
 
-        printAll()
+        printAll(craftDict, materialDict)
         s = input("Add to this list?\n> ")
         if s.lower() == "y":
             addTopCraft(craftDict, materialDict)
